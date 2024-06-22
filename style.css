@@ -66,6 +66,10 @@ img.ilus:hover{
   font-size: large;
   margin: auto auto 1rem auto;
   cursor: pointer;
+  transition: all 0.4s alternate;
+}
+.order-text:hover{
+  text-decoration: underline;
 }
 .more-text {
   cursor: pointer;
@@ -85,7 +89,7 @@ img.ilus:hover{
   padding: 0.5rem;
   margin: 0.5rem auto;
   border-radius: 8pt;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 1rem;
 }
 .logo {
