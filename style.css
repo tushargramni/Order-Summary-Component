@@ -1,0 +1,153 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e0e8ff;
+}
+.bg{
+  position: absolute;
+  z-index: -1;
+}
+.card {
+  display: flex;
+  max-width: 450px;
+  /* border: solid 2pt rebeccapurple; */
+  border-radius: 14pt;
+  background: white;
+  /* overflow: hidden; */
+}
+.img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10pt;
+  /* border: solid 4pt mediumaquamarine; */
+}
+.img {
+  display: flex;
+  /* border: solid 4pt mediumspringgreen; */
+  border-radius: 6pt;
+}
+img.ilus {
+  display: flex;
+  flex-grow: 1;
+  cursor: pointer;
+  border-top-right-radius: 12pt;
+  border-top-left-radius: 12pt;
+  transition: all 0.4s linear;
+  box-shadow: 2px 2px 8px black;
+}
+img.ilus:hover{
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 2px 2px 5px black;
+  transform: scale(1.1);
+}
+.img-content {
+  padding: 1rem 2.5rem;
+  text-align: center;
+  /* gap: 0.25rem; */
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-text {
+  font-size: large;
+  margin: auto auto 1rem auto;
+  cursor: pointer;
+}
+.more-text {
+  cursor: pointer;
+  color: #878d9f;
+  font-size: small;
+  line-height: 1.5rem;
+  /* width: 80%; */
+  margin: auto;
+}
+.play {
+  cursor: pointer;
+  width: 100%;
+  background: #f8f9fe;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem auto;
+  border-radius: 8pt;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+.player{
+transition: all 0.4s linear;
+}
+.player:hover{
+  transform: rotate(360deg);
+}
+.change {
+  display: flex;
+  margin: auto;
+  font-size: small;
+  font-weight: bold;
+}
+.pay {
+  cursor: pointer;
+  background-color: #382ae1;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  color: white;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding: 0.8rem;
+  margin: 1rem auto;
+  border-radius: 6pt;
+  transition: all 0.5s ease-in-out;
+}
+.pay:hover{
+  outline-offset: 2px;
+  outline: solid 2pt #382ae1;;
+  text-decoration: underline;
+}
+.cancel {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  background-color: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  color: #7e86a6;
+  font-size: small;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.cancel:hover{
+  text-decoration: underline;
+}
